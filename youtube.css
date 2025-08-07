@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 100px;
+  background-color: rgb(248, 248, 248);
+}
+.thumbnail {
+  height: 220px;
+  width: 350px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.thumbnaildiv {
+  position: relative;
+}
+.vid-preview {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  margin-top: 20px;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+.emo {
+  font-size: 13px;
+  color: gray;
+}
+.vid-desc {
+  color: rgb(96, 96, 96);
+  font-size: 15px;
+  line-height: 8px;
+  font-weight: 400;
+}
+.authordp {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+.dpdiv {
+  display: inline-block;
+  vertical-align: top;
+}
+.vid-info {
+  display: inline-block;
+  width: 300px;
+  margin-left: 10px;
+}
+.vid-title {
+  line-height: 25px;
+  margin-top: 0;
+}
+.time {
+  background-color: rgb(60, 57, 57);
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000099;
+}
+.timestamp {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  z-index: 100;
+}
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(204, 204, 204);
+  position: fixed;
+  z-index: 200;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  margin-left: 10px;
+}
+.menubutton {
+  height: 23px;
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.menubuttondiv {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menubuttondiv:hover {
+  background-color: rgb(217, 217, 217);
+  border-radius: 40px;
+  cursor: pointer;
+}
+.ylogo {
+  height: 20px;
+  margin-left: 20px;
+}
+.ylogo:hover {
+  cursor: pointer;
+}
+.part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 600px;
+}
+.searchbar {
+  width: 0;
+  display: flex;
+  flex: 1;
+  height: 40px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Roboto";
+  padding-left: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-width: 1px;
+  box-shadow: inset 0px 1px 2px #eeeeee;
+}
+.searchlogo,
+.vsearch {
+  height: 25px;
+  width: 25px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position: relative;
+}
+.Search,
+.vsearchtip,
+.createtip,
+.yappstip,
+.nottip {
+  position: absolute;
+  color: white;
+  background: #00000099;
+  font-family: "Roboto";
+  font-size: 13px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  top: 60px;
+  z-index: 50;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.searchlogodiv:hover .Search,
+.vsearchdiv:hover .vsearchtip,
+.createbuttondiv:hover .createtip,
+.yappsdiv:hover .yappstip,
+.notificationbuttondiv:hover .nottip {
+  opacity: 1;
+}
+.searchlogodiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  height: 38px;
+  width: 70px;
+  background-color: rgb(247, 247, 247);
+  border-color: rgb(204, 204, 204);
+  border-left-style: none;
+  border-width: 1px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.searchlogodiv:hover {
+  background-color: rgb(237, 237, 237);
+  cursor: pointer;
+}
+.searchlogo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.vsearchdiv {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 38px;
+  background-color: rgb(240, 240, 240);
+  margin-left: 20px;
+  border-radius: 38px;
+}
+.vsearchdiv:hover {
+  cursor: pointer;
+  background-color: rgb(220, 220, 220);
+}
+.part3 {
+  width: 225px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+}
+.createbutton {
+  height: 25px;
+}
+.createbuttondiv {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yappsdiv {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.createbuttondiv:hover,
+.yappsdiv:hover {
+  cursor: pointer;
+  background-color: rgb(217, 217, 217);
+  border-radius: 40px;
+}
+.yapps {
+  height: 25px;
+}
+.notificationbutton {
+  height: 25px;
+}
+.notificationbuttondiv {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notificationbuttondiv:hover {
+  cursor: pointer;
+  background-color: rgb(217, 217, 217);
+  border-radius: 40px;
+}
+.notbuttoncount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  background-color: #cc0000;
+  color: white;
+  height: 15px;
+  border-radius: 15px;
+  width: 15px;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+}
+.profilephoto {
+  height: 25px;
+  border-radius: 25px;
+}
+.profilephoto:hover {
+  cursor: pointer;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  width: 72px;
+  background-color: white;
+  z-index: 500;
+}
+.home,
+.explore,
+.originals,
+.youtubemusic,
+.subscriptions,
+.library {
+  height: 25px;
+}
+.text {
+  font-family: "Roboto";
+  font-size: 10px;
+}
+.sidebarimgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75px;
+  line-height: 30px;
+}
+.sidebarimgdiv:hover {
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+}
